@@ -1,0 +1,15 @@
+<span appHighlight="{{color}}">{{ title }} app is running!</span>
+
+<a routerLink="anup">Navigate to Anup!</a>
+
+<h3>{{timer}}</h3>
+<ul>
+  <li *ngFor="let movie of movies" >
+       {{ movie.title }}
+       <ul *ngFor="let member of movie.castmembers" >
+         <li >{{member}}</li>
+       </ul>
+  </li>
+</ul>
+   
+<router-outlet></router-outlet>
